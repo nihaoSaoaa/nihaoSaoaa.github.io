@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <!-- <script src="static/js/script.js"></script> -->
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >马家豪</h1>
+                <h4 id="persona-tag" >Web 前端</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont">&#xec88;</i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">马家豪</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">温州大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2020</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont">&#xeab6;</i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">18358254724</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">1036752927@qq.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/nihaoSaoaa</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont">&#xed1d;</i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="70" max="100"></progress>
+                        
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">vue</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">react</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">node.js</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont">&#x3488;</i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont">&#xebca;</i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>温州大学 - 化学专业（本科）2016-2020</h3>
+                        <p>
+                            - 2019年开始自学前端，能用 js 进行编程，对 js 原理有一定的了解。
+                            <br>
+                            - 能使用 vue 全家桶编写简单的应用。
+                            <br>
+                            - 能用 node.js 的 web服务器框架如 express 搭建简单的服务器
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont">&#xeaf4;</i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于 vue 、vue-router、vuex 的单页应用</h3>
+                        <p>
+                            <a href="https://github.com/nihaoSaoaa/supermall" target="blank">github地址</a>
+                            <a href="http://test.mjh.cool/" target="blank">项目地址</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>后端基于 express ，前端基于 vue 的后台管理应用</h3>
+                        <p>
+                            <a href="https://github.com/nihaoSaoaa/NODE-VUE-MOBA" target="blank">github地址</a>
+                            <a href="http://test.mjh.cool/admin" target="blank">项目地址</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于 vue 的基础组件库</h3>
+                        <p>
+                            <a href="https://github.com/nihaoSaoaa/mikasaui" target="blank">github地址</a>
+                            
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
