@@ -42,9 +42,7 @@ a {
     margin-right: 20px;
 
 }
-a:active, a:link {
-    color: #000;`
-}
+
 
 .progress-list div {
     width: 100%;
@@ -69,7 +67,8 @@ a:active, a:link {
 }
 
 .right-list li {
-    margin-bottom: 12px;
+    padding: 12px 0;
+    border-bottom: lightblue 1px solid;
 }
 
 
@@ -181,7 +180,7 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://avatars3.githubusercontent.com/u/53243865?s=460&u=44be589b33a2b2340ce23b0591a433b360a4d141&v=4');
+    background-image: url('https://avatars2.githubusercontent.com/u/53243865?s=460&u=eaef9e8ad79d709702e642946324aa254d211c4d&v=4');
     background-size: 120%;
     background-position:center;
     border-radius:50%;
